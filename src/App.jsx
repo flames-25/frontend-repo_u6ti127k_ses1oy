@@ -12,13 +12,13 @@ function App() {
         <FeatureGrid />
         <DemoCTA />
       </main>
-      <footer className="border-t border-gray-200/70">
+      <footer className="border-t border-gray-200/70" id="contact">
         <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-gray-600 flex items-center justify-between">
           <p>
-            © {new Date().getFullYear()} Gamify Workplace. Feito com foco em motivação, transparência e impacto.
+            © {new Date().getFullYear()} Gamify Workplace. Foco em motivação, transparência e impacto.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-gray-900">Política de Privacidade</a>
+            <a href="#" className="hover:text-gray-900">Privacidade</a>
             <a href="#" className="hover:text-gray-900">Termos</a>
           </div>
         </div>

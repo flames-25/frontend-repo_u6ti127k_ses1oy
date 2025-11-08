@@ -1,4 +1,4 @@
-import { Rocket, Trophy } from 'lucide-react'
+import { Rocket } from 'lucide-react'
 
 export default function Header() {
   return (
@@ -13,12 +13,11 @@ export default function Header() {
             <p className="text-xs text-gray-500 -mt-0.5">Engaja, motiva e celebra conquistas</p>
           </div>
         </div>
-        <div className="hidden sm:flex items-center gap-3">
-          <span className="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-700 px-3 py-1 text-sm font-medium ring-1 ring-amber-200">
-            <Trophy className="h-4 w-4" />
-            Demo Interativa
-          </span>
-        </div>
+        <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-700">
+          <a href="#features" className="hover:text-gray-900">Funcionalidades</a>
+          <a href="#impact" className="hover:text-gray-900">Impacto</a>
+          <a href="#contact" className="hover:text-gray-900">Contato</a>
+        </nav>
       </div>
     </header>
   )

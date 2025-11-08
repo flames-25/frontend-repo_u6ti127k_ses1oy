@@ -33,8 +33,8 @@ export default function Hero() {
               feedback visual e integrações com ferramentas do dia-a-dia.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#demo" className="inline-flex items-center justify-center rounded-lg bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-700">
-                Explorar demo
+              <a href="#contact" className="inline-flex items-center justify-center rounded-lg bg-indigo-600 text-white px-4 py-2.5 text-sm font-semibold shadow hover:bg-indigo-700">
+                Agendar apresentação
               </a>
               <a href="#features" className="inline-flex items-center justify-center rounded-lg bg-white text-gray-900 px-4 py-2.5 text-sm font-semibold shadow ring-1 ring-gray-200 hover:bg-gray-50">
                 Ver funcionalidades

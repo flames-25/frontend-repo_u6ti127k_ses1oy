@@ -11,8 +11,7 @@ export default class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, info) {
-    // Optional: send to telemetry service
-    // console.error('Spline error:', error, info)
+    // You could send this info to a monitoring service
   }
 
   render() {
