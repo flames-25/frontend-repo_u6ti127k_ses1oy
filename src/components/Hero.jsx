@@ -1,14 +1,26 @@
 import Spline from '@splinetool/react-spline'
+import ErrorBoundary from './ErrorBoundary'
 
 export default function Hero() {
   return (
     <section className="relative w-full">
       <div className="relative h-[380px] md:h-[460px] rounded-3xl overflow-hidden ring-1 ring-gray-200/60 bg-white">
         <div className="absolute inset-0">
-          <Spline
-            scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
-            style={{ width: '100%', height: '100%' }}
-          />
+          <ErrorBoundary
+            fallback={
+              <div className="w-full h-full flex items-center justify-center bg-gray-50">
+                <div className="text-center">
+                  <p className="text-gray-700 font-semibold">Não foi possível carregar a cena 3D</p>
+                  <p className="text-gray-500 text-sm">Tente recarregar a página ou verifique sua conexão.</p>
+                </div>
+              </div>
+            }
+          >
+            <Spline
+              scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </ErrorBoundary>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent pointer-events-none" />
         <div className="relative z-10 p-8 md:p-12 flex h-full items-end">
