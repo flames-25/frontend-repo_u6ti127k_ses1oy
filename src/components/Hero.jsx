@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="relative h-[380px] md:h-[460px] rounded-3xl overflow-hidden ring-1 ring-gray-200/60 bg-white">
         <div className="absolute inset-0">
           <Spline
-            scene="https://prod.spline.design/6QF7x7P3qHQY-3wE/scene.splinecode"
+            scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
             style={{ width: '100%', height: '100%' }}
           />
         </div>
